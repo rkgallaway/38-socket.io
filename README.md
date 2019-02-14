@@ -1,13 +1,16 @@
-![CF](http://i.imgur.com/7v5ASc8.png) LAB
+![CF](http://i.imgur.com/7v5ASc8.png) LAB 38
 =================================================
 
-## Project Name
+## Lab 38: Socket io
 
-### Author: Student/Group Name
+### Author: Ryan Gallaway
 
 ### Links and Resources
-* [repo](http://xyz.com)
-* [travis](http://xyz.com)
+
+[![Build Status](https://www.travis-ci.com/rkgallaway/38-socket.io.svg?branch=master)](https://www.travis-ci.com/rkgallaway/38-socket.io)
+
+* [repo](https://github.com/rkgallaway/38-socket.io)
+* [travis](https://www.travis-ci.com/rkgallaway/38-socket.io)
 * [back-end](http://xyz.com) (when applicable)
 * [front-end](http://xyz.com) (when applicable)
 
@@ -19,12 +22,23 @@
 #### `modulename.js`
 ##### Exported Values and Methods
 
-###### `foo(thing) -> string`
-Usage Notes or examples
+## Assignment
+Extend the functionality of the base **Yakker** application
 
-###### `bar(array) -> array`
-Usage Notes or examples
+### Requirements - Client
+* Add message history to the display
+  * Only the last 15
+  * Allow a user to bookmark, like, or un-like a message
+* STYLING
+* Animate incoming messages
 
+### Requirements - Server
+* Add support for additional events
+  * What else should you consider supporting?
+    * Flag? Like? Delete?
+  * Hold onto history
+    * Up to 1000?
+    * Persist on server stop, Load on start
 ### Setup
 #### `.env` requirements
 * `PORT` - Port Number
@@ -43,4 +57,4 @@ Usage Notes or examples
 * What assertions need to be / should be made?
 
 #### UML
-Link to an image of the UML for your application and response to events
+![Socket io UML](./assets/uml.jpg)
